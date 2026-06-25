@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Opzio — Automation SaaS Landing Page</title>
+  <meta name="description" content="Opzio automation SaaS landing page converted from PSD/screenshot to HTML, CSS, and JavaScript with advanced animations." />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="loader-mark">
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <p>Building workflow velocity</p>
+  </div>
+
+  <canvas id="orbCanvas" class="orb-canvas" aria-hidden="true"></canvas>
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <header class="site-header" id="siteHeader">
+    <a href="#top" class="brand" aria-label="Opzio home">
+      <span class="brand-mark" aria-hidden="true">
+        <i></i><i></i><i></i><i></i><i></i>
+      </span>
+      <span>OPZIO</span>
+    </a>
+    <nav class="nav" id="navMenu" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#blueprints">About</a>
+      <a href="#plans">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQs</a>
+      <a href="#footer">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="#cta" class="header-cta magnetic">Contact Us</a>
+  </header>
+
+  <main id="top">
+    <section class="hero section" id="home">
+      <div class="hero-bg-wave"></div>
+      <div class="hero-grid container">
+        <div class="hero-copy" data-reveal="up">
+          <span class="eyebrow orbit-badge"><span></span>The 14-Day Delivery Guarantee</span>
+          <h1 class="split-text" data-split>Automate Manual Work with Opzio</h1>
+          <p>We build custom automation pipelines for SMBs that remove the busy work from your operations — delivered in just two weeks.</p>
+          <div class="hero-actions">
+            <a href="#pricing" class="btn btn-primary magnetic">Unlock Automation Audit</a>
+            <a href="#plans" class="btn btn-ghost magnetic"><span class="play-dot"></span>See The Workflow</a>
+          </div>
+        </div>
+        <div class="hero-social" data-reveal="fade">
+          <div class="avatar-stack" aria-hidden="true">
+            <span></span><span></span><span></span><span></span>
+          </div>
+          <strong>72k+</strong>
+          <p>Manual tasks automated</p>
+        </div>
+      </div>
+      <div class="hero-dashboard-wrap container" data-reveal="zoom">
+        <div class="dashboard-card tilt-card" data-tilt>
+          <img src="assets/dashboard-hero.jpg" alt="Opzio automation dashboard preview" />
+          <div class="mock-shine"></div>
+        </div>
+        <div class="float-kpi kpi-left" data-float>
+          <small>Workflow Value</small><strong>$59,800</strong><span>+42% faster ops</span>
+        </div>
+        <div class="float-kpi kpi-right" data-float>
+          <small>Task Output</small><strong>800</strong><span>automation runs</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section blueprints" id="blueprints">
+      <div class="container narrow center" data-reveal="up">
+        <span class="section-kicker">✥</span>
+        <h2>Core Opzio Blueprints</h2>
+      </div>
+      <div class="container blueprint-grid">
+        <article class="blueprint-card tilt-card" data-reveal="up" data-tilt>
+          <div class="card-top"><span>Workflow</span><i>01</i></div>
+          <h3>Invoicing</h3>
+          <p>Trigger: Every Friday<br />Goal: Keep finance clean without chasing spreadsheets.</p>
+          <div class="donut" style="--p:78"><b>128</b><small>Tasks</small></div>
+          <a href="#plans">Explore Specs →</a>
+        </article>
+        <article class="blueprint-card tilt-card" data-reveal="up" data-delay="80" data-tilt>
+          <div class="card-top"><span>Sales</span><i>02</i></div>
+          <h3>Lead Flow</h3>
+          <p>Trigger: New form / call<br />Goal: Route, enrich, and follow-up before leads go cold.</p>
+          <div class="flow-pills"><span>AI Score</span><span>CRM</span><span>Email</span><span>Alert</span></div>
+          <a href="#plans">Explore Specs →</a>
+        </article>
+        <article class="blueprint-card tilt-card" data-reveal="up" data-delay="160" data-tilt>
+          <div class="card-top"><span>Workflow</span><i>03</i></div>
+          <h3>Customer Ops</h3>
+          <p>Trigger: Ticket received<br />Goal: Segment requests and assign action instantly.</p>
+          <div class="mini-users"><span></span><span></span><span></span><span></span><em>+23%</em></div>
+          <a href="#plans">Explore Specs →</a>
+        </article>
+        <article class="blueprint-card tilt-card" data-reveal="up" data-delay="240" data-tilt>
+          <div class="card-top"><span>Status</span><i>04</i></div>
+          <h3>Reporting</h3>
+          <p>Trigger: Dashboard snapshot<br />Goal: Daily insights for team visibility.</p>
+          <div class="bar-chart" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          <a href="#plans">Explore Specs →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section shift gradient-panel">
+      <div class="container narrow center" data-reveal="up">
+        <h2>The Opzio Shift</h2>
+        <p>We convert messy operator habits into repeatable automation systems.</p>
+      </div>
+      <div class="container shift-board" data-reveal="zoom">
+        <div class="shift-col">
+          <article><span>Before</span><h3>Manual Leads</h3><p>Every prospect is tracked by memory, missed calls, and messy CRM updates.</p></article>
+          <article><span>Before</span><h3>Manual Finance</h3><p>Invoices, reminders, and reconciliation require repetitive admin work.</p></article>
+        </div>
+        <div class="shift-mark" data-spin><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="shift-col">
+          <article><span>After</span><h3>Opzio Lead Flow</h3><p>New leads are scored, enriched, assigned, and followed up automatically.</p></article>
+          <article><span>After</span><h3>Opzio Reconciliation</h3><p>Invoices, reminders, and reporting move into one clean workflow.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section calculator" id="calculator">
+      <div class="container narrow center" data-reveal="up">
+        <span class="section-kicker">✥</span>
+        <h2>How Much is Manual Work Costing You?</h2>
+        <p>Change the sliders and see how much invisible operational drag is sitting inside your week.</p>
+      </div>
+      <div class="container cost-card" data-reveal="up">
+        <div class="ranges">
+          <label>Total Team Size <strong id="teamValue">8 people</strong><input id="teamRange" type="range" min="2" max="45" value="8" /></label>
+          <label>Manual Hours / Week <strong id="hoursValue">15 hrs</strong><input id="hoursRange" type="range" min="5" max="80" value="15" /></label>
+          <label>Avg Hourly Cost <strong id="rateValue">$45/hr</strong><input id="rateRange" type="range" min="10" max="120" value="45" /></label>
+        </div>
+        <div class="cost-result">
+          <span>Estimated Monthly Revenue Risk</span>
+          <strong id="costValue">$14,040</strong>
+          <div class="scenario-pills"><button data-rate="0.75">Lean</button><button class="active" data-rate="1">Normal</button><button data-rate="1.25">Scale</button></div>
+          <a class="btn btn-primary magnetic" href="#cta">Unlock The Revenue</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pricing" id="pricing">
+      <div class="container narrow center" data-reveal="up">
+        <h2>Investment Built on ROI</h2>
+        <p>Pick the workflow package. We install it, test it, and document it.</p>
+      </div>
+      <div class="container price-grid">
+        <article class="price-card tilt-card" data-reveal="up" data-tilt>
+          <div class="price-icon">⚙</div>
+          <small>Starter</small><h3>$1,995</h3>
+          <p>Automate your first operational workflow.</p>
+          <ul><li>2 core automations</li><li>Basic QA checklist</li><li>Setup delivery</li></ul>
+          <a class="btn btn-outline magnetic" href="#cta">Select Plan</a>
+        </article>
+        <article class="price-card featured tilt-card" data-reveal="up" data-delay="100" data-tilt>
+          <div class="price-icon">🚀</div>
+          <small>Growth</small><h3>$4,495</h3>
+          <p>For growing teams ready to remove daily bottlenecks.</p>
+          <ul><li>5 workflow pipelines</li><li>Dashboard + reporting</li><li>Priority installation</li></ul>
+          <a class="btn btn-primary magnetic" href="#cta">Select Plan</a>
+        </article>
+        <article class="price-card tilt-card" data-reveal="up" data-delay="200" data-tilt>
+          <div class="price-icon">🏢</div>
+          <small>Scale</small><h3>$6,854</h3>
+          <p>Automation architecture for multi-team operations.</p>
+          <ul><li>10+ custom triggers</li><li>Role-based approvals</li><li>Automation docs</li></ul>
+          <a class="btn btn-outline magnetic" href="#cta">Select Plan</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section velocity" id="plans">
+      <div class="container velocity-grid">
+        <div class="velocity-screen tilt-card" data-reveal="left" data-tilt>
+          <img src="assets/velocity-mockup.jpg" alt="Workflow velocity screen preview" />
+          <span class="screen-dot"></span>
+        </div>
+        <div class="velocity-copy" data-reveal="right">
+          <span class="section-kicker">✥</span>
+          <h2>The 14-Day Velocity Plan of Us</h2>
+          <div class="timeline">
+            <article><b>Days 1–2: Friction Audit</b><p>We map the workflow and identify exactly what drains team time.</p></article>
+            <article><b>Days 3–7: Flow Architecture</b><p>We build triggers, logic, reminders, and handoff rules.</p></article>
+            <article><b>Days 8–12: Systems Testing</b><p>We test against real scenarios and refine each automation.</p></article>
+            <article><b>Day 14: Final Handoff</b><p>Your team gets a complete operating playbook and launch support.</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq">
+      <div class="container narrow center" data-reveal="up">
+        <h2>Frequently Asked Questions</h2>
+        <p>Clear answers before your team automates manual workflows.</p>
+      </div>
+      <div class="container faq-list" data-reveal="up">
+        <article class="faq-item"><button>Do you force a platform app or our business stack?<span>+</span></button><div><p>No. The setup is designed around your current CRM, sheets, email, forms, and team process.</p></div></article>
+        <article class="faq-item active"><button>What happens after the 14-day implementation is complete?<span>−</span></button><div><p>You receive a workflow map, tested automations, documentation, and post-launch handoff so your team can operate confidently.</p></div></article>
+        <article class="faq-item"><button>Can you automate customer support and finance tasks?<span>+</span></button><div><p>Yes. Common flows include lead intake, invoice reminders, reporting, support triage, internal approvals, and CRM updates.</p></div></article>
+        <article class="faq-item"><button>How secure are the automation processes you build?<span>+</span></button><div><p>We use permission-based access, clear data routing, and documented logic so each workflow stays controllable and auditable.</p></div></article>
+      </div>
+    </section>
+
+    <section class="section cta" id="cta">
+      <div class="container cta-card" data-reveal="zoom">
+        <div class="giant-mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+        <div>
+          <h2>Show us One Messy Workflow.</h2>
+          <p>We will turn it into a clean automation pipeline your team can use daily.</p>
+          <a href="mailto:hello@opzio.com" class="btn btn-primary magnetic">Book an Automation Audit</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#top" class="brand"><span class="brand-mark"><i></i><i></i><i></i><i></i><i></i></span><span>OPZIO</span></a>
+        <p>Workflow automation design and implementation for busy SMB teams.</p>
+        <div class="socials"><a href="#">f</a><a href="#">in</a><a href="#">x</a></div>
+      </div>
+      <div><h4>Navigation</h4><a href="#home">Home</a><a href="#blueprints">Core Blueprints</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a></div>
+      <div><h4>Useful Links</h4><a href="#">Workflow Automation</a><a href="#">Case Studies</a><a href="#">Legal Terms</a><a href="#">Careers</a></div>
+      <form class="newsletter" id="newsletter"><h4>Newsletter Signup</h4><label><input type="email" placeholder="Your Email Address" required /><button>↗</button></label><small id="formMsg">No spam. Automation notes only.</small></form>
+    </div>
+    <div class="container copyright">© 2026 Opzio. All rights reserved.</div>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+  <script src="app.js"></script>
+</body>
+</html>
